@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Silver Acupuncture & Wellness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Gold Silver Acupuncture</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#book" class="btn-book">Book Now</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <div class="hero-content">
+            <h1>Restore Balance to Your Life</h1>
+            <p>Holistic healing and traditional acupuncture therapy.</p>
+            <a href="#book" class="cta-button">Schedule Appointment</a>
+        </div>
+    </header>
+
+    <section id="services">
+        <h2>Our Treatments</h2>
+        <div class="services-grid">
+            <div class="card">
+                <h3>Traditional Acupuncture</h3>
+                <p>Fine needles to stimulate specific points on the body to relieve pain and balance energy.</p>
+            </div>
+            <div class="card">
+                <h3>Cupping Therapy</h3>
+                <p>Ancient form of alternative medicine creates suction on the skin to help with pain and inflammation.</p>
+            </div>
+            <div class="card">
+                <h3>Herbal Medicine</h3>
+                <p>Custom herbal formulas designed to address your specific constitution and health needs.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="book">
+        <h2>Book a Session</h2>
+        <p>Select a date to see available 30-minute slots.</p>
+        
+        <div class="scheduler-container">
+            <div class="date-selector">
+                <label for="appointmentDate">Choose Date:</label>
+                <input type="date" id="appointmentDate">
+            </div>
+
+            <div id="slotsContainer" class="slots-grid">
+                <p class="placeholder-text">Please select a date above.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Confirm Booking</h3>
+            <p>Time: <span id="selectedTimeDisplay"></span> on <span id="selectedDateDisplay"></span></p>
+            <form id="bookingForm">
+                <input type="text" id="patientName" placeholder="Your Name" required>
+                <input type="email" id="patientEmail" placeholder="Your Email" required>
+                <button type="submit">Confirm Appointment</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Gold Silver Acupuncture. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
